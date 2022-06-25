@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎨 Etch-a-sketch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="main">
+        <h1>ETCH-A-SKETCH</h1>
+        <canvas class="canvas"></canvas>
+      </section>
+      <section class="secondary">
+        <input type="color" name="color" id="color" />
+        <div class="buttons">
+          <button>color mode</button>
+          <button>rainbow mode</button>
+          <button>lighten</button>
+          <button>clear</button>
+          <button>eraser</button>
+          <button>shading</button>
+          <button>grid lines</button>
+        </div>
+        <label for="gird-slider">1</label>
+        <input
+          type="range"
+          name="gird-slider"
+          id="slider"
+          value="1"
+          max="64"
+          min="1"
+        />
+      </section>
+      <footer>
+        Copyright © <span>2022</span> rjrahul007
+        <a href="https://github.com/rjrahul007/Etch-a-sketch" target="_blank"
+          ><i class="fa-brands fa-github fa-2x"></i
+        ></a>
+      </footer>
+    </div>
+  </body>
+</html>

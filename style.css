@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto&display=swap");
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  position: relative;
   background-color: #ededed;
 }
 /* Typography */
@@ -13,13 +16,14 @@ h1 {
 }
 
 footer {
+  margin-top: 2rem;
   letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
 }
 /* Layout */
-.container {
-  margin: 50px auto;
-}
+/* .container {
+  margin: 0.5rem auto;
+} */
 canvas {
   background-color: #fefefe;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
@@ -44,7 +48,10 @@ button:hover,
 input[type="color"]:hover {
   transform: scale(1.05);
 }
-
+.colorpick-eyedropper-input-trigger {
+  display: block;
+  margin: 0 auto;
+}
 input {
   cursor: pointer;
 }
@@ -52,7 +59,8 @@ input {
   display: flex;
   flex-flow: column nowrap;
   /* align-items: center; */
-  width: 40%;
+  max-width: 150px;
+  gap: 16px;
   margin: 0 auto;
 }
 
@@ -60,11 +68,31 @@ button {
   text-transform: capitalize;
   font-size: 1rem;
   width: 100%;
-  margin: 0.5em auto;
   padding: 10px 20px;
   border: none;
   border-radius: 3px;
   outline: 1px solid;
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-around;
+  }
+  .buttons {
+    width: 200px;
+  }
+  canvas {
+    width: 500px;
+    height: 500px;
+  }
+  footer {
+    margin: 0;
+  }
 }

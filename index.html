@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Etch-a-Sketch</h1>
     <div class="container">
       <section class="main">
-        <h1>Etch-a-Sketch</h1>
         <canvas class="canvas"></canvas>
       </section>
       <section class="secondary">
@@ -27,23 +27,23 @@
           <button>eraser</button>
           <button>shading</button>
           <button>grid lines</button>
+          <p for="gird-slider">1 x 1</p>
+          <input
+            type="range"
+            name="gird-slider"
+            id="slider"
+            value="1"
+            max="64"
+            min="1"
+          />
         </div>
-        <p for="gird-slider">1 x 1</p>
-        <input
-          type="range"
-          name="gird-slider"
-          id="slider"
-          value="1"
-          max="64"
-          min="1"
-        />
       </section>
-      <footer>
-        Copyright © <span>2022</span> rjrahul007
-        <a href="https://github.com/rjrahul007/Etch-a-sketch" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-      </footer>
     </div>
+    <footer>
+      Copyright © <span>2022</span> rjrahul007
+      <a href="https://github.com/rjrahul007/Etch-a-sketch" target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+    </footer>
   </body>
 </html>

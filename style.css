@@ -24,9 +24,14 @@ footer {
 /* .container {
   margin: 0.5rem auto;
 } */
-canvas {
+.canvas {
   background-color: #fefefe;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  display: grid;
+  /* z-index: -9999; */
+}
+.grid-gap {
+  gap: 1px;
 }
 input[type="color"] {
   -webkit-appearance: circle-button;
@@ -59,7 +64,7 @@ input {
   display: flex;
   flex-flow: column nowrap;
   /* align-items: center; */
-  max-width: 150px;
+  width: 150px;
   gap: 16px;
   margin: 0 auto;
 }
@@ -75,7 +80,10 @@ button {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
-
+.grid-div {
+  aspect-ratio: 1;
+  background-color: red;
+}
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 4rem;
@@ -84,13 +92,14 @@ button {
     display: flex;
     flex-flow: row-reverse nowrap;
     justify-content: space-around;
+    align-items: center;
   }
   .buttons {
     width: 200px;
   }
-  canvas {
-    width: 500px;
-    height: 500px;
+  .canvas {
+    width: 400px;
+    height: 400px;
   }
   footer {
     margin: 0;

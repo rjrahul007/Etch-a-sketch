@@ -12,27 +12,34 @@ body {
 /* Typography */
 h1 {
   font-family: "Monoton", cursive;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
+  margin-top: 2rem;
 }
 
 footer {
-  margin-top: 2rem;
+  font-size: 18px;
+  margin: 2rem auto;
   letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
 }
+footer p {
+  display: inline;
+}
 /* Layout */
-/* .container {
+.container {
+  max-width: 90%;
   margin: 0.5rem auto;
-} */
+}
 .canvas {
   background-color: #fefefe;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   display: grid;
-  /* z-index: -9999; */
 }
-.grid-gap {
-  gap: 1px;
+
+.secondary {
+  margin: 2em auto;
 }
+
 input[type="color"] {
   -webkit-appearance: circle-button;
   width: 100px;
@@ -57,13 +64,16 @@ input[type="color"]:hover {
   display: block;
   margin: 0 auto;
 }
+input[type="range"] {
+  accent-color: transparent;
+}
+
 input {
   cursor: pointer;
 }
 .buttons {
   display: flex;
   flex-flow: column nowrap;
-  /* align-items: center; */
   width: 150px;
   gap: 16px;
   margin: 0 auto;
@@ -80,26 +90,37 @@ button {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
+button.active {
+  background-color: black;
+  color: #ededed;
+}
 .grid-div {
+  margin: 0;
+  padding: 0;
   aspect-ratio: 1;
-  background-color: red;
+}
+.grid-div.lines {
+  outline: 1px solid rgb(165, 159, 149);
 }
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 4rem;
+    margin: 0;
   }
   .container {
     display: flex;
     flex-flow: row-reverse nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
+    /* margin: 0 auto; */
   }
   .buttons {
     width: 200px;
   }
   .canvas {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
   }
   footer {
     margin: 0;

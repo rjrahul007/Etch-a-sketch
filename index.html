@@ -13,20 +13,20 @@
   </head>
   <body>
     <h1>Etch-a-Sketch</h1>
-    <div class="container">
-      <section class="main">
+    <section class="container">
+      <article class="main">
         <div class="canvas"></div>
-      </section>
-      <section class="secondary">
-        <input type="color" name="color" id="color" />
+      </article>
+      <article class="secondary">
+        <input type="color" name="color" id="color" value="#FFEB7F" />
         <div class="buttons">
-          <button>color mode</button>
-          <button>rainbow mode</button>
-          <button>lighten</button>
-          <button>clear</button>
-          <button>eraser</button>
-          <button>shading</button>
-          <button>grid lines</button>
+          <button class="btn active">color mode</button>
+          <button class="btn">rainbow mode</button>
+          <button class="btn">lighten</button>
+          <button class="btn">clear</button>
+          <button class="btn">eraser</button>
+          <button class="btn">shading</button>
+          <button class="btn">grid lines</button>
           <p class="grid-slider">1 x 1</p>
           <input
             type="range"
@@ -37,13 +37,13 @@
             min="1"
           />
         </div>
-      </section>
-    </div>
+      </article>
+    </section>
     <footer>
-      Copyright © <span>2022</span> rjrahul007
-      <a href="https://github.com/rjrahul007/Etch-a-sketch" target="_blank"
-        ><i class="fa-brands fa-github"></i
-      ></a>
+      <p class="footer-text"></p>
+      <a href="https://github.com/rjrahul007/Etch-a-sketch" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
     </footer>
   </body>
   <script src="main.js"></script>
